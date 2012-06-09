@@ -8,7 +8,9 @@ Turmas::Application.routes.draw do
 
   resources :notas
 
-  resources :professors
+  resources :professors do
+	resources :turmas
+  end
 
   resources :nota
 

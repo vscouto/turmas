@@ -6,6 +6,8 @@ class TurmasController < ApplicationController
       @turmas = Aluno.find(params[:aluno_id]).turmas
     elsif params[:disciplina_id]
       @turmas = Disciplina.find(params[:disciplina_id]).turmas
+    elsif params[:professor_id]
+      @turmas = Professor.find(params[:professor_id]).turmas
     else
       @turmas = Turma.all
     end

@@ -9,12 +9,18 @@ autenticação.
 == Instruções
 
 - Baixe o projeto em uma pasta no seu computador
+- Abra o Prompt de Comando e acesse a pasta onde foi baixado o projeto
 - Para utilizar MySQL
    * Edite o arquivo config/databases.yml e configure o usuario e senha
 - Para utilizar SQLite3
    * Copie o arquivo config/databases.sqlite.yml para config/databases.yml
+   * Edite o arquivo Gemfile e comente a linha onde está escrito "gem 'mysql'"
+   * Adicione a seguinte linha no arquivo:
+   gem 'sqlite3'
 - Execute:
-   * rake db:migrate          - Isto ira criar a base de dados
+   * bundle install           - Isto ira instalar as dependencias
+   * rake db:create           - Isto ira criar a base de dados
+   * rake db:migrate          - Isto ira criar as tabelas na base de dados
    * rake db:fixtures:load    - Isto ira criar dados de teste na base
 - Inicie o servidor:
    * rails server

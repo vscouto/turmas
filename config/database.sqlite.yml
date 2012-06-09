@@ -1,0 +1,14 @@
+development:
+  adapter: sqlite3
+  database: db/turmas_development
+  timeout: 5000
+
+test:
+  adapter: sqlite3
+  database: db/turmas_test
+  timeout: 5000
+
+production:
+  adapter: sqlite3
+  database: db/turmas_production
+  timeout: 5000

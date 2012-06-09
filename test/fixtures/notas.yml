@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  turma_id: 1
+  aluno_id: 1
+  g1: 1.5
+  g2: 1.5
+  g3: 1.5
+
+two:
+  turma_id: 2
+  aluno_id: 2
+  g1: 1.5
+  g2: 1.5
+  g3: 1.5

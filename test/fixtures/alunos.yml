@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  matricula: 1
+  nome: Aluno1
+  email: aluno1@1.com
+
+two:
+  id: 2
+  matricula: 2
+  nome: Aluno2
+  email: aluno2@2.com

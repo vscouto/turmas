@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  codigo: 1
+  semestre: 2012/1
+  creditos: 2
+  disciplina_id: 1
+  professor_id: 1
+
+two:
+  id: 2
+  codigo: 2
+  semestre: 2012/2
+  creditos: 4
+  disciplina_id: 2
+  professor_id: 2

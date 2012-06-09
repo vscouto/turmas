@@ -1,0 +1,33 @@
+<h1>Listing notas</h1>
+
+<table>
+  <tr>
+    <th>Turma</th>
+    <th>Disciplina</th>
+    <th>Aluno</th>
+    <th>G1</th>
+    <th>G2</th>
+    <th>G3</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @notas.each do |nota| %>
+  <tr>
+    <td><%= nota.turma.codigo %></td>
+    <td><%= nota.turma.disciplina.nome %></td>
+    <td><%= nota.aluno.nome %></td>
+    <td><%= nota.g1 %></td>
+    <td><%= nota.g2 %></td>
+    <td><%= nota.g3 %></td>
+    <td><%= link_to 'Show', nota %></td>
+    <td><%= link_to 'Edit', edit_nota_path(nota) %></td>
+    <td><%= link_to 'Destroy', nota, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nota', new_nota_path %>

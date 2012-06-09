@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  codigo: 1
+  nome: Disciplina1
+
+two:
+  id: 2
+  codigo: 2
+  nome: Disciplina2

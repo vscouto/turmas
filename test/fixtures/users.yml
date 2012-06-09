@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: tales
+  password: tales
+  email: 1@1.com
+
+two:
+  username: elgio
+  password: elgio
+  email: 2@2.com

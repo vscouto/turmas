@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  cgu: 1
+  nome: Professor1
+
+two:
+  id: 2
+  cgu: 2
+  nome: Professor2

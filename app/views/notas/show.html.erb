@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Turma:</b>
+  <%= @nota.turma.codigo %>
+</p>
+
+<p>
+  <b>Aluno:</b>
+  <%= @nota.aluno.nome %>
+</p>
+
+<p>
+  <b>G1:</b>
+  <%= @nota.g1 %>
+</p>
+
+<p>
+  <b>G2:</b>
+  <%= @nota.g2 %>
+</p>
+
+<p>
+  <b>G3:</b>
+  <%= @nota.g3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_nota_path(@nota) %> |
+<%= link_to 'Back', notas_path %>

@@ -1,0 +1,6 @@
+Disciplina - codigo, nome
+Turma - codigo, semestre, creditos, disciplina_id, professor_id
+Aluno - matricula, nome, email
+Nota - turma_id, aluno_id, g1, g2, g3
+User - username, password, email
+Professor - cgu, nome

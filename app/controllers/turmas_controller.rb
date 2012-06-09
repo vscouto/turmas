@@ -2,7 +2,14 @@ class TurmasController < ApplicationController
   # GET /turmas
   # GET /turmas.json
   def index
-    @turmas = Turma.all
+    if params[:aluno_id]
+      @turmas = Aluno.find(params[:aluno_id]).turmas
+    elsif params[:disciplina_id]
+      @turmas = Disciplina.find(params[:disciplina_id]).turmas
+    else
+      @turmas = Turma.all
+    end
+    
 
     respond_to do |format|
       format.html # index.html.erb

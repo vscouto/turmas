@@ -12,11 +12,19 @@ Turmas::Application.routes.draw do
 
   resources :nota
 
-  resources :turmas
+  resources :turmas do
+	resources :alunos
+	resources :notas
+  end
 
-  resources :alunos
+  resources :alunos do
+    resources :turmas
+    resources :notas
+  end
 
-  resources :disciplinas
+  resources :disciplinas do
+    resources :turmas
+  end
 
   resources :users
 

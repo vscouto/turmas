@@ -2,7 +2,13 @@ class NotasController < ApplicationController
   # GET /notas
   # GET /notas.json
   def index
-    @notas = Nota.all
+    if params[:turma_id]
+      @notas = Turma.find(params[:turma_id]).notas
+    elsif params[:aluno_id]
+      @notas = Aluno.find(params[:aluno_id]).notas
+    else
+      @notas = Nota.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb

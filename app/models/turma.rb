@@ -3,6 +3,7 @@ class Turma < ActiveRecord::Base
 
   belongs_to :disciplina
   belongs_to :professor
+  has_many :notas
   has_many :alunos, :through => :notas
 
   validates_presence_of :disciplina
